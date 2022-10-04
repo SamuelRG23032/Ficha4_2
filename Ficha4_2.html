@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testes de Regex</title>
+    </head>
+    <body>
+        <label for="Apenas Texto">Apenas Texto</label>
+        <input type="text" placeholder="Apenas Texto" pattern="([A-Z\s]|[a-z\s])*">
+        <br><br>
+        <label for="Apenas Numeros">Apenas Numeros</label>
+        <input type="text" placeholder="Apenas Numeros" pattern="[0-9\s]*">
+        <br><br>
+        <label for="Apenas Minusculas">Apenas Minusculas</label>
+        <input type="text" placeholder="Apenas Minusculas" pattern="[a-z\s]*">
+        <br><br>
+        <label for="IPV">IPV</label>
+        <input type="text" placeholder="IPV" pattern="([IPV\s]|[ipv\s]){3}">
+        <br><br>
+        <label for="Nao pode IPV">Nao pode IPV</label>
+        <input type="text" placeholder="Nao pode IPV" pattern="([^IPV\s]|[^ipv\s])*">
+        <br><br>
+        <label for="Sempre 15">Sempre 15</label>
+        <input type="text" placeholder="15 caracteres Maiusculos" pattern="([A-Z\s]){15}">
+        <br><br>
+        <label for="Numero de Telemovel">Numero de Telemovel</label>
+        <input type="text" placeholder="Telemovel" pattern="[9]{1}[1236]{1}[0-9]{1}+\-[0-9]{3}+\-[0-9]{3}">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </body>
+</html>
